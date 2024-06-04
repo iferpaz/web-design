@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background: url(assets/images/htmlcss.jpg)">
+    <header>
+      <h4 style="color: #000">Forms are amazing!</h4>
+    </header>
+    <nav>
+      <ul>
+        <li style="list-style: none; display: inline">
+          <a href="#" style="text-decoration: none">
+            <span class="material-symbols-outlined"> home </span> Inicio
+          </a>
+        </li>
+        <li style="list-style: none; display: inline">
+          <a href="#" style="text-decoration: none">
+            <span class="material-symbols-outlined"> category </span> Products
+          </a>
+        </li>
+        <li style="list-style: none; display: inline">
+          <a href="#" style="text-decoration: none">
+            <span class="material-symbols-outlined"> category </span> About
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h5>Datos del cliente:</h5>
+        <form>
+          <label for="nombre" style="font-size: 25px;">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            maxlength="100"
+            style="border-radius: 5px"
+          />
+          <br />
+          <br />
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+            maxlength="100"
+          />
+          <br />
+          <br />
+          <label for="provincia">Provincia:</label>
+          <select name="provincia" id="provincia">
+            <option>Seleccione una provincia</option>
+            <option value="1">Loja</option>
+            <option value="2">El Oro</option>
+            <option value="3">Cuenca</option>
+            <option value="4">Guayas</option>
+            <option value="5">Babahoyo</option>
+          </select>
+          <br />
+          <br />
+          <label for="canton">Canton:</label>
+          <select name="canton" id="canton">
+            <option>Seleccione un canton</option>
+            <option value="1">Cariamanga</option>
+            <option value="2">Machala</option>
+            <option value="3">Paute</option>
+            <option value="4">Duran</option>
+            <option value="5">Milagro</option>
+          </select>
+          <br />
+          <br />
+          <label for="direccion">Dirección:</label>
+          <textarea
+            name="direccion"
+            id="direccion"
+            rows="3"
+            cols="50"
+          ></textarea>
+          <br />
+          <br />
+          <label for="envio">Envio a Domicilio:</label>
+          <input type="checkbox" id="envio" name="envio" />
+          <br /><br />
+          <label for="correo">Correo:</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            required
+            maxlength="100"
+          />
+          <br /><br />
+          <label for="contrasenia">Contraseña:</label>
+          <input type="password" id="contrasenia" name="contrasenia" />
+          <br />
+          <br />
+          <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+            name="fechaNacimiento"
+            required
+          />
+          <br />
+          <br />
+          <label for="fotoPerfil">Foto:</label>
+          <input type="file" id="fotoPerfil" name="fotoPerfil" />
+          <br />
+          <br />
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" />
+          <br />
+          <br />
+          <label for="monto">Monto de Crédito:</label>
+          <input
+            type="number"
+            id="monto"
+            name="monto"
+            min="100"
+            max="500"
+            step="any"
+          />
+          <br />
+          <br />
+          <label>Posee otros créditos:</label>
+          <input
+            type="radio"
+            id="creditos-si"
+            name="otrosCreditos"
+            value="Si"
+          />
+          <label for="creditos-si">Si</label>
+          <input
+            type="radio"
+            id="creditos-no"
+            name="otrosCreditos"
+            value="No"
+          />
+          <label for="creditos-no">No</label>
+          <br />
+          <br />
+          <!-- <input type="submit" value="Guardar" /> -->
+          <button type="submit">
+            <span class="material-symbols-outlined"> save </span> Guardar
+          </button>
+          <button type="reset">&times; Cancelar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copryght Ivan Paz 2024. Todos los derechos reservados.</p>
+      <ul>
+        <li><a href="https://facebook.com" target="_blank">Ir a face</a></li>
+        <li><a href="https://twitter.com" target="_blank">Ir a X</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
